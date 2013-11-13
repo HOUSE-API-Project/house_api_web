@@ -1,0 +1,114 @@
+body { 
+font-size:12px;
+font-family: 'Share Tech', sans-serif;
+min-width:980px;
+color:#333333;
+}
+table, td, th {
+border: 2px rgb(55, 174, 90) solid;
+    padding:5px;
+font-size:16px;
+}
+table {
+/*margin : 20px;*/
+
+}
+
+
+#wrap {
+margin:30px;
+width:90%;
+max-width:1138px;
+min-width:1138px;
+margin:0 auto;
+/*background-color:#00FF00;*/
+}
+
+li {
+margin:5px;
+}
+.nav_ex {
+display:inline;
+font-size:14px;
+}
+
+a {
+text-decoration: none;
+}
+a:link { color: #0000ff; }
+a:visited { color: #000080; }
+a:hover { color: #ff0000; }
+a:active { color: #ff8000; }
+
+#logo {
+float:left;
+margin:0 20px 20px 20px;
+}
+#global_nav {
+font-size:24px;
+list-style:none;
+}
+
+#api_table {
+width:94%;
+margin:0 auto;
+}
+#concept{
+display:block;
+width:94%;
+content: "."; 
+clear: both;
+margin: 20px auto 0 auto;
+/*background-color:#e3e3e3;*/
+    border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */  
+}
+
+#jp_concept{
+display:inline;
+float:left;
+width: 45%;
+margin: 2% 3% 2% 2%;
+}
+
+#en_concept{
+display:inline;
+float:left;
+width: 45%;
+margin: 2% 2% 2% 3%;
+font-size:14px;
+}
+
+#footer {
+font-size:12px;
+font-family: font-family:'Lucida Grande'; 
+text-align:center;
+min-width:100%;
+crear:both;
+/*bottom:10px;*/
+float:left;
+padding:50px 0px 10px 0px;
+color:#000;
+}
+
+#canvas {
+margin:0px auto 20px auto;
+clear:both;
+display:block;
+}
+
+.clearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+ 
+.clearfix {display: inline-block;}
+ 
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */

@@ -1,0 +1,122 @@
+   onload = function() {
+   draw();
+ };
+function draw() {
+  /* canvas要素のノードオブジェクト */
+  var canvas = document.getElementById('canvas');
+  var canvasWidth = 1000;
+  var canvasHeight = 400;
+  /* canvas要素の存在チェックとCanvas未対応ブラウザの対処 */
+  if ( ! canvas || ! canvas.getContext ) {
+    return false;
+  }
+  /* 2Dコンテキスト */
+  var ctx = canvas.getContext('2d');
+  /* 四角を描く */
+
+  //wifiの全クライアント数
+
+ 
+  ctx.strokeStyle = 'RGB(200,200,200)';
+  for (i = 0; i < canvasWidth; i = i+30){
+    ctx.beginPath();
+    ctx.lineTo(i, 0);
+    ctx.lineTo(i, canvasHeight);
+    ctx.lineTo(i, 0);
+    ctx.closePath();
+    ctx.stroke();
+  }
+  
+
+    //3fのwifiクライアントの数
+  ctx.strokeStyle = 'RGB(153,0,102)';
+  ctx.beginPath();
+    ctx.moveTo(canvasWidth - 10, canvasHeight - (array_wifi_clients[0] * 10));
+  var inc = 0;
+  for (i = canvasWidth; i > 0; i = i-10){
+    array_wifi_clients[i];
+      ctx.lineTo(i -10, canvasHeight - (array_wifi_clients[inc] * 10));
+    if(inc % 5 == 0 || inc == 99) {
+	ctx.fillText(array_wifi_clients[inc], i - 10, canvasHeight - (array_wifi_clients[inc] * 10) -5);
+    }
+    inc++;
+  }
+  ctx.stroke();
+
+    //1fのwifiの数
+    ctx.strokeStyle = 'RGB(204,102,51)';
+    ctx.beginPath();
+    ctx.moveTo(canvasWidth - 10, canvasHeight - (array_wifi_digi[0] * 10));
+    var inc = 0;
+    for (i = canvasWidth; i > 0; i = i-10){
+	array_wifi_digi[i];
+	ctx.lineTo(i - 10, canvasHeight - (array_wifi_digi[inc] * 10));
+	if(inc % 5 == 0 || inc == 99) {
+	    ctx.fillText(array_wifi_digi[inc], i - 10, canvasHeight - (array_wifi_digi[inc] * 10) -5);
+	}
+	inc++;
+    }
+    ctx.stroke();
+
+
+  //デジ部屋の温度グラフ描画
+  ctx.strokeStyle = 'RGB(102,102,255)';
+  ctx.beginPath();
+    ctx.moveTo(canvasWidth - 10, canvasHeight - (array_wifi_twof[0] * 10));
+  var inc = 0;
+  for (i = canvasWidth; i > 0; i = i-10){
+    array_wifi_twof[i];;
+      ctx.lineTo(i - 10, canvasHeight - (array_wifi_twof[inc] * 10));
+    if(inc % 5 == 0 || inc == 99) {
+	ctx.fillText(array_wifi_twof[inc], i - 10, canvasHeight - (array_wifi_twof[inc] * 10) -5);
+    }
+    inc++;
+  }
+  ctx.stroke();
+
+    //地下のwifiクライアントの描画
+    ctx.strokeStyle = 'RGB(51,153,51)';
+    ctx.beginPath();
+    ctx.moveTo(canvasWidth - 10, canvasHeight - (array_wifi_bf[0] * 10));
+    var inc = 0;
+    for (i = canvasWidth; i > 0; i = i-10){
+        array_wifi_bf[i];
+        ctx.lineTo(i - 10, canvasHeight - (array_wifi_bf[inc] * 10));
+        if(inc % 5 == 0 || inc == 99) {
+            ctx.fillText(array_wifi_bf[inc], i - 10, canvasHeight - (array_wifi_bf[inc] * 10) -5);
+        }
+        inc++;
+    }
+    ctx.stroke();
+
+  //デジ部屋の温度グラフ描画                                                                                                                                                        
+    ctx.strokeStyle = 'RGB(51,51,102)';
+    ctx.beginPath();
+    ctx.moveTo(canvasWidth - 10, canvasHeight - (array_digi_temp[0] * 10));
+    var inc = 0;
+    for (i = canvasWidth; i > 0; i = i-10){
+	array_digi_temp[i];;
+	ctx.lineTo(i - 10, canvasHeight - (array_digi_temp[inc] * 10));
+	if(inc % 5 == 0 || inc == 99) {
+            ctx.fillText(array_digi_temp[inc], i - 10, canvasHeight - (array_digi_temp[inc] * 10) -5);
+	}
+	inc++;
+    }
+    ctx.stroke();
+//デジ部屋の人感センサーグラフ描画
+    ctx.strokeStyle = 'RGB(204,51,51)';
+    ctx.beginPath();
+    ctx.moveTo(canvasWidth -10, canvasHeight - (array_digi_pir[0] * 10));
+    var inc = 0;
+    for (i = canvasWidth; i > 0; i = i-10){
+	array_digi_pir[i];
+	if (array_digi_pir_length > inc) {
+	    ctx.lineTo(i-10, canvasHeight - (array_digi_pir[inc] * 10));
+	    if(inc % 5 == 0) {
+		ctx.fillText(array_digi_pir[inc], i-10, canvasHeight - (array_digi_pir[inc] * 10) -5);
+	    }
+	    inc++;
+	}
+    }
+    ctx.stroke();
+}
