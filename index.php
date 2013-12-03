@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>House API Project</title>
-  <link rel="shortcut icon" href="http://huez.us/favicon.ico" type="favicon.ico">
+  <link rel="shortcut icon" href="./favicon.ico" type="favicon.ico">
   <link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
   <link href='./css/global.css' rel='stylesheet' type='text/css'>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
