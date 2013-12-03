@@ -48,7 +48,7 @@
 	  <td class="nav_table_inline"></td>
         </tr>
         <tr class="nav_table_inline">
-          <td class="nav_table_inline"><a href="https://twitter.com/House_API"><s>API document</s></a></td>
+          <td class="nav_table_inline"><a href=""><s>API document</s></a></td>
           <td class="nav_table_inline"><p class="nav_ex">Document</p></td>
 	  <td class="nav_table_inline"></td>
         </tr>
