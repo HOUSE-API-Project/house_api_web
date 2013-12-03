@@ -40,17 +40,17 @@
 <div class="fb-like" data-href="http://house-api-project.org/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></td>
         </tr>
         <tr class="nav_table_inline">
-          <td class="nav_table_inline"><a href="http://atnd.org/users/161063">Hackthon</a></td>
+          <td class="nav_table_inline"><a target="_blank" href="http://atnd.org/users/161063">Hackthon</a></td>
           <td class="nav_table_inline"><p class="nav_ex">Meeting and Developing</p></td>
 	  <td class="nav_table_inline"></td>
         </tr>
         <tr class="nav_table_inline">
-          <td class="nav_table_inline"><a href="https://github.com/HOUSE-API-Project">github</a></td>
+          <td class="nav_table_inline"><a target="_blank" href="https://github.com/HOUSE-API-Project">github</a></td>
           <td class="nav_table_inline"><p class="nav_ex">The House api codes and the blueprint</p></td>
 	  <td class="nav_table_inline"></td>
         </tr>
         <tr class="nav_table_inline">
-          <td class="nav_table_inline"><a href=""><s>API document</s></a></td>
+          <td class="nav_table_inline"><a target="_blank" href=""><s>API document</s></a></td>
           <td class="nav_table_inline"><p class="nav_ex">Document</p></td>
 	  <td class="nav_table_inline"></td>
         </tr>
@@ -173,7 +173,7 @@ House API Project am been making by many interaction design, using open data and
     <!--<h1 style="margin:20px 20px 20px 20px; width: 100%; float:left;">Social Media</h1>-->
     <div id="social_media" style="width: 94%; clear: both; margin: 0 auto;">
       <div id="social_media_etc" style="width:45%; margin:0% 3% 2% 2%; min-height:400px; float:left;"/>
-      <a href="https://www.facebook.com/groups/houseapiproject">House API Project Facebook Gourp</a>
+      <a target="_blank" href="https://www.facebook.com/groups/houseapiproject">House API Project Facebook Gourp</a>
       </div>
       <div id="twitter_widget" style="width:45%; margin:0% 2% 2% 3%; float:left; height:300px;">
         <a class="twitter-timeline" height="400" style="float:left;" href="https://twitter.com/House_API" data-widget-id="396735627036590080"></a>
