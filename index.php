@@ -22,8 +22,11 @@
       </div><!-- #logo -->
       <table id="global_nav_table" class="nav_table_inline"><!-- valign="bottom"> -->
         <tr>
-	  <td class="nav_table_inline">House API Project</td>
-	  <td class="nav_table_inline"></td>
+	  <!-- <td class="nav_table_inline">House API Project</td>
+	  <td class="nav_table_inline"></td> -->
+	  <td>Social Network Service</td>
+	  <td><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://house-api-project.org/" data-text="House API Project">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></td>
         </tr>
         <tr class="nav_table_inline">
           <td class="nav_table_inline"><a href="http://atnd.org/users/161063">Hackthon</a></td>
