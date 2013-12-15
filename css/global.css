@@ -3,6 +3,7 @@ font-size:12px;
 font-family: 'Share Tech', sans-serif;
 min-width:980px;
 color:#333333;
+/*background-image:url('../img/background.gif');*/
 }
 table, td, th {
 border: 2px rgb(55, 174, 90) solid;
@@ -26,6 +27,8 @@ max-width:1138px;
 min-width:1138px;
 margin:0 auto;
 /*background-color:#00FF00;*/
+background-image:url('../img/background.gif');
+background-size:auto 100%;
 }
 
 li {
