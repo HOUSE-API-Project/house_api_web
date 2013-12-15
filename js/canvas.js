@@ -12,7 +12,12 @@ function draw() {
     }
   /* 2Dコンテキスト */
     var ctx = canvas.getContext('2d');
-
+    
+    ctx.fillStyle = 'rgba(255,255,255,0.8)';
+    ctx.beginPath();
+    ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+    ctx.stroke();
+    ctx.fillStyle = 'RGB(200, 200, 200)';
 
     function drawMinPath (pathX, pathColor, minStr) {
 	ctx.lineWidth = 0.2; 
@@ -34,7 +39,8 @@ function draw() {
     drawMinPath(canvasWidth - 300, "red", "30 minutes ago");
     drawMinPath(canvasWidth - 600, "red", "60 minutes ago");
     drawMinPath(canvasWidth - 900, "red", "90 minutes ago");
-
+    
+    ctx.fillStyle = 'RGB(0,0,0)';
     ctx.strokeStyle = 'RGB(200,200,200)';
     ctx.lineWidth = 1;  
     ctx.font = "9px";
