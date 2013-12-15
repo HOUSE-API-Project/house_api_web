@@ -38,12 +38,11 @@ font-size:14px;
 
 a {
 text-decoration: none;
-color: rgb(55, 173, 90);
 }
-a:link { color: rgb(55, 173, 90); }
-a:visited { color: rgb(55, 173, 90); }
-a:hover { color: rgb(55, 173, 90); }
-a:active { color: rgb(55, 173, 90); }
+a:link { color: #0000ff; }
+a:visited { color: #000080; }
+a:hover { color: #ff0000; }
+a:active { color: #ff8000; }
 
 #logo {
 float:left;
@@ -66,9 +65,9 @@ content: ".";
 clear: both;
 margin: 20px auto 0 auto;
 /*background-color:#e3e3e3;*/
-    border-radius: 5px;        /* CSS3ËçâÊ°à */  
-    -webkit-border-radius: 5px;    /* Safari,Google ChromeÁî® */  
-    -moz-border-radius: 5px;   /* FirefoxÁî® */  
+    border-radius: 5px;        /* CSS3í¡í∞∆ */  
+    -webkit-border-radius: 5px;    /* Safari,Google ChromeíÕ— */  
+    -moz-border-radius: 5px;   /* FirefoxíÕ— */  
 }
 
 #jp_concept{
@@ -125,19 +124,10 @@ visibility: hidden;
 
 #social_media_etc {
   background-color:rgb(55, 176, 90);
-  border-radius: 10px;        /* CSS3ËçâÊ°à */  
-  -webkit-border-radius: 10px;    /* Safari,Google ChromeÁî® */  
-  -moz-border-radius: 10px;   /* FirefoxÁî® */ 
-  padding:0% 2%;
-  width:41%;
+  border-radius: 10px;        /* CSS3í¡í∞∆ */  
+  -webkit-border-radius: 10px;    /* Safari,Google ChromeíÕ— */  
+  -moz-border-radius: 10px;   /* FirefoxíÕ— */ 
+
 }
 
-#social_media_etc img {
-margin:5px;
-}
-
-
-
-.crearfix {
-  clear:both;
-}
+crearfix
