@@ -144,3 +144,12 @@ margin:5px;
 .crearfix {
   clear:both;
 }
+
+#top_image {
+width: 100%;
+/*max-width: 1138px;
+min-width: 1138px;*/
+border-radius: 5px;        /* CSS3草案 */  
+-webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+-moz-border-radius: 5px;   /* Firefox用 */
+}

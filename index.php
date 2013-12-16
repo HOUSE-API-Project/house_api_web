@@ -57,6 +57,8 @@
         </tr>
       </table>
     </div><!-- #header -->
+
+    <img id="top_image" src="./img/top_image.gif"/>
     <!-- canvasのjavascriptコード -->
     <script type="text/javascript" src="./js/canvas.js"></script>
     <h1 style="margin:20px 20px 5px 20px; width: 100%;">API Realtime Graph</h1>
