@@ -60,10 +60,12 @@
 
     <img id="top_image" src="./img/top_image.gif"/>
     <!-- canvasのjavascriptコード -->
+<!--
     <script type="text/javascript" src="./js/canvas.js"></script>
     <h1 style="margin:20px 20px 5px 20px; width: 100%;">API Realtime Graph</h1>
     <canvas id="canvas" width="1000px" height="400px;" style=""></canvas>
-    <h1 style="margin:0px 20px 5px 20px">Part of the API</h1>
+-->
+    <h1 style="margin:20px 20px 5px 20px">Part of the API</h1>
 
     <!-- APIのテーブル -->
     <table id="api_table">
