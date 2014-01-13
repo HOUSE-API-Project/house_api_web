@@ -51,7 +51,7 @@
 	  <td class="nav_table_inline"></td>
         </tr>
         <tr class="nav_table_inline">
-          <td class="nav_table_inline"><a target="_blank" href=""><s>API document</s></a></td>
+          <td class="nav_table_inline"><a target="_blank" href="https://github.com/HOUSE-API-Project/sinatra-api-provider/blob/master/doc/README.md">API document</a></td>
           <td class="nav_table_inline"><p class="nav_ex">Document</p></td>
 	  <td class="nav_table_inline"></td>
         </tr>
