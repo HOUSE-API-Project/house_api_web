@@ -3,7 +3,6 @@ font-size:12px;
 font-family: 'Share Tech', sans-serif;
 min-width:980px;
 color:#333333;
-/*background-image:url('../img/background.gif');*/
 }
 table, td, th {
 border: 2px rgb(55, 174, 90) solid;
@@ -11,7 +10,6 @@ border: 2px rgb(55, 174, 90) solid;
 font-size:16px;
 }
 table {
-/*margin : 20px;*/
 
 }
 
@@ -153,3 +151,4 @@ border-radius: 5px;        /* CSS3草案 */
 -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
 -moz-border-radius: 5px;   /* Firefox用 */
 }
+

@@ -27,9 +27,9 @@
     <?php include './api_get.php'; ?>
     <div id="header">
       <div id="logo">
-        <img alt="" src="./img/logo.gif"><!-- <p>House API Project</p> -->
+        <img alt="" src="./img/logo.gif">
       </div><!-- #logo -->
-      <table id="global_nav_table" class="nav_table_inline"><!-- valign="bottom"> -->
+      <table id="global_nav_table" class="nav_table_inline">
         <tr>
 	  <!-- <td class="nav_table_inline">House API Project</td>
 	  <td class="nav_table_inline"></td> -->
@@ -64,6 +64,7 @@
     <script type="text/javascript" src="./js/canvas.js"></script>
     <h1 style="margin:20px 20px 5px 20px; width: 100%;">API Realtime Graph</h1>
     <canvas id="canvas" width="1000px" height="400px;" style=""></canvas>
+    <div style="text-align: center; background-color: #6DA786; font-size: 20px;border-radius: 5px; cursor: pointer;" id="img_export" onclick="graph_to_img()"> Export to Image </div>
 
     <h1 style="margin:20px 20px 5px 20px">Part of the API</h1>
 

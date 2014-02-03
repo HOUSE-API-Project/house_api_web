@@ -1,3 +1,5 @@
+var img;
+
 onload = function() {
     draw();
 };
@@ -75,4 +77,18 @@ function draw() {
     drawGraph(canvasWidth,canvasHeight, array_wifi_digi, 100, 'RGB(153,0,102)');
     //all wifi clients
     drawGraph(canvasWidth,canvasHeight, array_wifi_clients, 100, 'RGB(153,0,102)');
+
+    //export to img
+    img=new Image();
+    //保存できるタイプは、'image/png'と'image/jpeg'の2種類
+    var type = 'image/png';
+    //imgオブジェクトのsrcに格納。
+    img.src = canvas.toDataURL(type);
 }
+
+function graph_to_img(){
+  //例：現在のウィンドウに出力。
+  location.href = img.src;
+}
+
+
