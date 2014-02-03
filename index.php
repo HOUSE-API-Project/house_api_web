@@ -64,7 +64,7 @@
     <script type="text/javascript" src="./js/canvas.js"></script>
     <h1 style="margin:20px 20px 5px 20px; width: 100%;">API Realtime Graph</h1>
     <canvas id="canvas" width="1000px" height="400px;" style=""></canvas>
-    <div style="text-align: center; background-color: #6DA786; font-size: 20px;border-radius: 5px; cursor: pointer;" id="img_export" onclick="graph_to_img()"> Export to Image </div>
+<!--    <div style="text-align: center; background-color: #6DA786; font-size: 20px;border-radius: 5px; cursor: pointer;" id="img_export" onclick="graph_to_img()"> Export to Image </div>-->
 
     <h1 style="margin:20px 20px 5px 20px">Part of the API</h1>
 
