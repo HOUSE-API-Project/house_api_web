@@ -69,6 +69,13 @@
     <h1 style="margin:20px 20px 5px 20px">Part of the API</h1>
 
     <!-- APIのテーブル -->
+<?php
+function convertTime($time) {
+  $t = new DateTime($time);
+  $t->setTimeZone(new DateTimeZone('Asia/Tokyo'));
+  return $t->format('Y-m-d H:i:s') . PHP_EOL;
+}
+?>
     <table id="api_table">
       <tr>
         <th>API Name</th>
@@ -78,20 +85,20 @@
       </tr>
       <tr>
         <td><?php print("3f Wifi Temperature"); ?>　　　　　</td>
-        <td><?php print($obj_wifi->{'temperature'}); ?></td>
-        <td><?php print($obj_wifi->{'time'}); ?></td>
+        <td><?php print($obj_wifi->{'temperature'}); ?>
+	<td><?php print convertTime($obj_wifi->{'time'}); ?></td>	
         <td><?php print("/shibuhouse/wifi/temperature"); ?></td>
       </tr>
       <tr style="color:RGB(153,0,102)">
         <td><?php print("All Wifi Clients"); ?></td>
         <td><?php print($obj_wifi->{'clients'}); ?></td>
-        <td><?php print($obj_wifi->{'time'}); ?></td>
+	<td><?php print convertTime($obj_wifi->{'time'}); ?></td>
         <td><?php print("/shibuhouse/wifi/clients"); ?></td>
       </tr>
       <tr style="color:RGB(102,102,255)">
         <td><?php print("2f All Wifi Clients"); ?>　　　　　</td>
-        <td><?php print($obj_wifi_2f->{'all_clients'}); ?>　　　</td>
-        <td><?php print($obj_wifi_2f->{'time'}); ?></td>
+        <td><?php print($obj_wifi_2f->{'all_clients'}); ?></td>
+	<td><?php print convertTime($obj_wifi_2f->{'time'}); ?></td>
         <td><?php print("/shibuhouse/wifi/2f/clients"); ?></td>
       </tr>
 <!--      <tr style="">
@@ -99,53 +106,57 @@
         <td><?php print($obj_wifi_2f->{'clients_high_speed'}); ?>　　　</td>
         <td><?php print($obj_wifi_2f->{'time'}); ?></td>
         <td><?php print("/shibuhouse/wifi/2f/clients"); ?></td>
-      </tr> -->
-<!--      <tr style="">
+      </tr>
+      <tr style="">
         <td><?php print("2f Wifi Clients (connected lowspeed)"); ?>　　　　　</td>
         <td><?php print($obj_wifi_2f->{'clients_low_speed'}); ?>　　　</td>
         <td><?php print($obj_wifi_2f->{'time'}); ?></td>
         <td><?php print("/shibuhouse/wifi/2f/clients"); ?></td>
-      </tr> -->
+      </tr>
+-->
       <tr style="color:RGB(204,102,51)">
         <td><?php print("1f All Wifi Clients"); ?>　　　　　</td>
         <td><?php print($obj_wifi_digi->{'all_clients'}); ?>　　　</td>
-        <td><?php print($obj_wifi_digi->{'time'}); ?></td>
+	<td><?php print convertTime($obj_wifi_digi->{'time'}); ?></td>
         <td><?php print("/shibuhouse/wifi/1f/clients"); ?></td>
       </tr>
       <tr style="color:RGB(51,153,51)">
         <td><?php print("bf All Wifi Clients"); ?>　　　　　</td>
         <td><?php print($obj_wifi_bf->{'all_clients'}); ?>　　　</td>
-        <td><?php print($obj_wifi_bf->{'time'}); ?></td>
+	<td><?php print convertTime($obj_wifi_bf->{'time'}); ?></td>
         <td><?php print("/shibuhouse/wifi/bf/clients"); ?></td>
       </tr>
       <tr style="">
         <td><?php print("Digital Room Humidity"); ?>　　　　　</td>
         <td><?php print($obj_digi_hum->{'humidity'}); ?>　　　</td>
-        <td><?php print($obj_digi_hum->{'time'}); ?></td>
+	<td><?php print convertTime($obj_digi_hum->{'time'}); ?></td>
         <td><?php print("/shibuhouse/1f/humidity"); ?></td>
       </tr>
       <tr style="color:RGB(204,51,51)">
         <td><?php print("Digital Room PIR"); ?>　　　　　</td>
         <td><?php print($obj_digi_pir->count[0]->count); ?></td>
-        <td><?php print($obj_digi_pir->{'time'}); ?></td>
+	<td><?php print convertTime($obj_digi_pir->{'time'}); ?></td>
         <td><?php print("/shibuhouse/1f/pir"); ?></td>
       </tr>
-<!--      <tr style="">
+<!--
+      <tr style="">
         <td><?php print("Digital Room Wifi Clients (connected highspeed)"); ?>　　　　　</td>
-        <td><?php print($obj_wifi_digi->{'clients_high_speed'}); ?>　　　</td>
+p        <td><?php print($obj_wifi_digi->{'clients_high_speed'}); ?>　　　</td>
         <td><?php print($obj_wifi_digi->{'time'}); ?></td>
         <td><?php print("/shibuhouse/wifi/1f/clients_high_speed"); ?></td>
-      </tr> -->
-<!--      <tr style="">
+      </tr>
+      <tr style="">
         <td><?php print("Digital Room Wifi Clients (connected lowspeed)"); ?>　　　　　</td>
         <td><?php print($obj_wifi_digi->{'clients_low_speed'}); ?>　　　</td>
         <td><?php print($obj_wifi_digi->{'time'}); ?></td>
         <td><?php print("/shibuhouse/wifi/1f/clients_low_speed"); ?></td>
-      </tr> -->
+      </tr>
+-->
+
       <tr style="color:RGB(51,51,102)">
         <td><?php print("Digital Room Temperature"); ?>　　　　　</td>
         <td><?php print($obj_one->{'temperature'}); ?>　　　</td>
-        <td><?php print($obj_one->{'time'}); ?></td>
+	<td><?php print convertTime($obj_one->{'time'}); ?></td>
         <td><?php print("/shibuhouse/1f/temperature"); ?></td>
       </tr>
     </table>
