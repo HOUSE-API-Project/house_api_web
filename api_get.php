@@ -28,6 +28,10 @@ $obj_wifi_bf = json_decode($json_wifi_bf);
 $json_digi_pir = file_get_contents('http://house-api-project.org/api/shibuhouse/1f/pir');
 $obj_digi_pir = json_decode($json_digi_pir);
 
+$json_ayafuji = file_get_contents('http://house-api-project.org/api/ayafuji/temperature');
+$obj_ayafuji = json_decode($json_ayafuji);
+
+
 #wifi_digi_pirのjs配列出力
 $array_digi_pir = file_get_contents('http://house-api-project.org/api/shibuhouse/1f/pir?limit=100?sort=asc');
 $obj_array_digi_pir = json_decode($array_digi_pir);

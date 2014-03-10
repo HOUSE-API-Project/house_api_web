@@ -84,13 +84,14 @@ function convertTime($time) {
 	<th>location</th>
         <th>API Path(http://house-api-project.org/api)</th>
       </tr>
-      <tr>
+<!--      <tr>
         <td><?php print("3f Wifi Temperature"); ?>　　　　　</td>
         <td><?php print($obj_wifi->{'temperature'}); ?>
 	<td><?php print convertTime($obj_wifi->{'time'}); ?></td>	
 	<td>shibuhouse</td>
         <td><?php print("/shibuhouse/wifi/temperature"); ?></td>
       </tr>
+-->
       <tr style="color:RGB(153,0,102)">
         <td><?php print("All Wifi Clients"); ?></td>
         <td><?php print($obj_wifi->{'clients'}); ?></td>
@@ -167,6 +168,14 @@ p        <td><?php print($obj_wifi_digi->{'clients_high_speed'}); ?>　　　</t
 	<td><?php print convertTime($obj_one->{'time'}); ?></td>
 	<td>shibuhouse</td>
         <td><?php print("/shibuhouse/1f/temperature"); ?></td>
+      </tr>
+
+      <tr style="">
+        <td><?php print("ayafuji house temperature"); ?>　　　　　</td>
+        <td><?php print($obj_ayafuji->{'temperature'}); ?>　　　</td>
+	<td><?php print convertTime($obj_ayafuji->{'time'}); ?></td>
+	<td>ayafuji House</td>
+        <td><?php print("/ayafuji/temperature"); ?></td>
       </tr>
     </table>
 
