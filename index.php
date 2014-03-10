@@ -81,7 +81,7 @@ function convertTime($time) {
         <th>API Name</th>
         <th>Current Value</th>
         <th>Time</th>
-	<th>location<th>
+	<th>location</th>
         <th>API Path(http://house-api-project.org/api)</th>
       </tr>
       <tr>
@@ -122,6 +122,7 @@ function convertTime($time) {
         <td><?php print("1f All Wifi Clients"); ?>　　　　　</td>
         <td><?php print($obj_wifi_digi->{'all_clients'}); ?>　　　</td>
 	<td><?php print convertTime($obj_wifi_digi->{'time'}); ?></td>
+	<td>shibuhouse</td>
         <td><?php print("/shibuhouse/wifi/1f/clients"); ?></td>
       </tr>
       <tr style="color:RGB(51,153,51)">
@@ -164,6 +165,7 @@ p        <td><?php print($obj_wifi_digi->{'clients_high_speed'}); ?>　　　</t
         <td><?php print("Digital Room Temperature"); ?>　　　　　</td>
         <td><?php print($obj_one->{'temperature'}); ?>　　　</td>
 	<td><?php print convertTime($obj_one->{'time'}); ?></td>
+	<td>shibuhouse</td>
         <td><?php print("/shibuhouse/1f/temperature"); ?></td>
       </tr>
     </table>
