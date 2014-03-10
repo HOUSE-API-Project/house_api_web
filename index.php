@@ -81,24 +81,28 @@ function convertTime($time) {
         <th>API Name</th>
         <th>Current Value</th>
         <th>Time</th>
+	<th>location<th>
         <th>API Path(http://house-api-project.org/api)</th>
       </tr>
       <tr>
         <td><?php print("3f Wifi Temperature"); ?>　　　　　</td>
         <td><?php print($obj_wifi->{'temperature'}); ?>
 	<td><?php print convertTime($obj_wifi->{'time'}); ?></td>	
+	<td>shibuhouse</td>
         <td><?php print("/shibuhouse/wifi/temperature"); ?></td>
       </tr>
       <tr style="color:RGB(153,0,102)">
         <td><?php print("All Wifi Clients"); ?></td>
         <td><?php print($obj_wifi->{'clients'}); ?></td>
 	<td><?php print convertTime($obj_wifi->{'time'}); ?></td>
+	<td>shibuhouse</td>
         <td><?php print("/shibuhouse/wifi/clients"); ?></td>
       </tr>
       <tr style="color:RGB(102,102,255)">
         <td><?php print("2f All Wifi Clients"); ?>　　　　　</td>
         <td><?php print($obj_wifi_2f->{'all_clients'}); ?></td>
 	<td><?php print convertTime($obj_wifi_2f->{'time'}); ?></td>
+	<td>shibuhouse</td>
         <td><?php print("/shibuhouse/wifi/2f/clients"); ?></td>
       </tr>
 <!--      <tr style="">
@@ -124,18 +128,21 @@ function convertTime($time) {
         <td><?php print("bf All Wifi Clients"); ?>　　　　　</td>
         <td><?php print($obj_wifi_bf->{'all_clients'}); ?>　　　</td>
 	<td><?php print convertTime($obj_wifi_bf->{'time'}); ?></td>
+	<td>shibuhouse</td>
         <td><?php print("/shibuhouse/wifi/bf/clients"); ?></td>
       </tr>
       <tr style="">
         <td><?php print("Digital Room Humidity"); ?>　　　　　</td>
         <td><?php print($obj_digi_hum->{'humidity'}); ?>　　　</td>
 	<td><?php print convertTime($obj_digi_hum->{'time'}); ?></td>
+	<td>shibuhouse</td>
         <td><?php print("/shibuhouse/1f/humidity"); ?></td>
       </tr>
       <tr style="color:RGB(204,51,51)">
         <td><?php print("Digital Room PIR"); ?>　　　　　</td>
         <td><?php print($obj_digi_pir->count[0]->count); ?></td>
 	<td><?php print convertTime($obj_digi_pir->{'time'}); ?></td>
+	<td>shibuhouse</td>
         <td><?php print("/shibuhouse/1f/pir"); ?></td>
       </tr>
 <!--
