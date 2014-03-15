@@ -5,8 +5,7 @@ min-width:980px;
 color:#333333;
 }
 table, td, th {
-border: 2px rgb(55, 174, 90) solid;
-    padding:5px;
+border: 1px rgb(55, 174, 90) solid;
 font-size:16px;
 }
 table {
