@@ -78,21 +78,29 @@ function convertTime($time) {
 ?>
     <table id="api_table">
       <tr>
+	<th><img src="https://cdn3.iconfinder.com/data/icons/healthcare-icons/32/Eye_lift-16.png"></th>
         <th>API Name</th>
         <th>Current Value</th>
         <th>Time</th>
 	<th>location</th>
         <th>API Path(http://house-api-project.org/api)</th>
       </tr>
-<!--      <tr>
-        <td><?php print("3f Wifi Temperature"); ?>　　　　　</td>
-        <td><?php print($obj_wifi->{'temperature'}); ?>
-	<td><?php print convertTime($obj_wifi->{'time'}); ?></td>	
-	<td>shibuhouse</td>
-        <td><?php print("/shibuhouse/wifi/temperature"); ?></td>
-      </tr>
--->
       <tr style="color:RGB(153,0,102)">
+	<td align="center" valign="middle">
+	  <form method="post" action="CGIのURI">
+	    <input type='checkbox' onclick='handleClick(all_wifi_bool);' checked="checked"/>
+<script>
+function handleClick(cb) {
+  if(cb) {
+    all_wifi_bool = false;
+  } else {
+    all_wifi_bool = true;
+  }
+  display("Clicked, new value = " + cb.checked);
+}
+</script>
+	  </form>
+	</td>
         <td><?php print("All Wifi Clients"); ?></td>
         <td><?php print($obj_wifi->{'clients'}); ?></td>
 	<td><?php print convertTime($obj_wifi->{'time'}); ?></td>
@@ -100,26 +108,43 @@ function convertTime($time) {
         <td><?php print("/shibuhouse/wifi/clients"); ?></td>
       </tr>
       <tr style="color:RGB(102,102,255)">
+	<td align="center" valign="middle">
+	  <form method="post" action="CGIのURI">
+	    <input type='checkbox' onclick='handleClick_two(wifi_twof_bool);' checked="checked"/>
+<script>
+function handleClick_two(cb) {
+  if(cb) {
+    wifi_twof_bool = false;
+  } else {
+    wifi_twof_bool = true;
+  }
+  display("Clicked, new value = " + cb.checked);
+}
+</script>
+	  </form>
+	</td>
         <td><?php print("2f All Wifi Clients"); ?>　　　　　</td>
         <td><?php print($obj_wifi_2f->{'all_clients'}); ?></td>
 	<td><?php print convertTime($obj_wifi_2f->{'time'}); ?></td>
 	<td>shibuhouse</td>
         <td><?php print("/shibuhouse/wifi/2f/clients"); ?></td>
       </tr>
-<!--      <tr style="">
-        <td><?php print("2f Wifi Clients (connected highspeed)"); ?>　　　　　</td>
-        <td><?php print($obj_wifi_2f->{'clients_high_speed'}); ?>　　　</td>
-        <td><?php print($obj_wifi_2f->{'time'}); ?></td>
-        <td><?php print("/shibuhouse/wifi/2f/clients"); ?></td>
-      </tr>
-      <tr style="">
-        <td><?php print("2f Wifi Clients (connected lowspeed)"); ?>　　　　　</td>
-        <td><?php print($obj_wifi_2f->{'clients_low_speed'}); ?>　　　</td>
-        <td><?php print($obj_wifi_2f->{'time'}); ?></td>
-        <td><?php print("/shibuhouse/wifi/2f/clients"); ?></td>
-      </tr>
--->
       <tr style="color:RGB(204,102,51)">
+	<td align="center" valign="middle">
+	  <form method="post" action="CGIのURI">
+	    <input type='checkbox' onclick='handleClick_1f(wifi_1f_bool);' checked="checked"/>
+<script>
+function handleClick_1f(cb) {
+  if(cb) {
+    wifi_1f_bool = false;
+  } else {
+    wifi_1f_bool = true;
+  }
+  display("Clicked, new value = " + cb.checked);
+}
+</script>
+	  </form>
+	</td>
         <td><?php print("1f All Wifi Clients"); ?>　　　　　</td>
         <td><?php print($obj_wifi_digi->{'all_clients'}); ?>　　　</td>
 	<td><?php print convertTime($obj_wifi_digi->{'time'}); ?></td>
@@ -127,6 +152,22 @@ function convertTime($time) {
         <td><?php print("/shibuhouse/wifi/1f/clients"); ?></td>
       </tr>
       <tr style="color:RGB(51,153,51)">
+	<td align="center" valign="middle">
+	  <form method="post" action="CGIのURI">
+<input type='checkbox' onclick='handleClick_bf(wifi_bf_bool);' checked="checked"/>
+
+<script>
+function handleClick_bf(cb) {
+  if(cb) {
+    wifi_bf_bool = false;
+  } else {
+    wifi_bf_bool = true;
+  }
+  display("Clicked, new value = " + cb.checked);
+}
+</script>
+	  </form>
+	</td>
         <td><?php print("bf All Wifi Clients"); ?>　　　　　</td>
         <td><?php print($obj_wifi_bf->{'all_clients'}); ?>　　　</td>
 	<td><?php print convertTime($obj_wifi_bf->{'time'}); ?></td>
@@ -134,6 +175,8 @@ function convertTime($time) {
         <td><?php print("/shibuhouse/wifi/bf/clients"); ?></td>
       </tr>
       <tr style="">
+	<td align="center" valign="middle">
+	</td>
         <td><?php print("Digital Room Humidity"); ?>　　　　　</td>
         <td><?php print($obj_digi_hum->{'humidity'}); ?>　　　</td>
 	<td><?php print convertTime($obj_digi_hum->{'time'}); ?></td>
@@ -141,28 +184,46 @@ function convertTime($time) {
         <td><?php print("/shibuhouse/1f/humidity"); ?></td>
       </tr>
       <tr style="color:RGB(204,51,51)">
+	<td align="center" valign="middle">
+	  <form method="post" action="CGIのURI">
+	    <input type='checkbox' onclick='handleClick_pir(digi_pir_bool);' checked="checked"/>
+<script>
+function handleClick_pir(cb) {
+  if(cb) {
+    digi_pir_bool = false;
+  } else {
+    digi_pir_bool = true;
+  }
+  display("Clicked, new value = " + cb.checked);
+}
+</script>
+
+	  </form>
+	</td>
         <td><?php print("Digital Room PIR"); ?>　　　　　</td>
         <td><?php print($obj_digi_pir->count[0]->count); ?></td>
 	<td><?php print convertTime($obj_digi_pir->{'time'}); ?></td>
 	<td>shibuhouse</td>
         <td><?php print("/shibuhouse/1f/pir"); ?></td>
       </tr>
-<!--
-      <tr style="">
-        <td><?php print("Digital Room Wifi Clients (connected highspeed)"); ?>　　　　　</td>
-p        <td><?php print($obj_wifi_digi->{'clients_high_speed'}); ?>　　　</td>
-        <td><?php print($obj_wifi_digi->{'time'}); ?></td>
-        <td><?php print("/shibuhouse/wifi/1f/clients_high_speed"); ?></td>
-      </tr>
-      <tr style="">
-        <td><?php print("Digital Room Wifi Clients (connected lowspeed)"); ?>　　　　　</td>
-        <td><?php print($obj_wifi_digi->{'clients_low_speed'}); ?>　　　</td>
-        <td><?php print($obj_wifi_digi->{'time'}); ?></td>
-        <td><?php print("/shibuhouse/wifi/1f/clients_low_speed"); ?></td>
-      </tr>
--->
-
+      
       <tr style="color:RGB(51,51,102)">
+	<td align="center" valign="middle">
+	  <form method="post" action="CGIのURI">
+	    <input type='checkbox' onclick='handleClick_temp(digi_temp_bool);' checked="checked"/>
+<script>
+function handleClick_temp(cb) {
+  if(cb) {
+    digi_temp_bool = false;
+  } else {
+    digi_temp_bool = true;
+  }
+  display("Clicked, new value = " + cb.checked);
+}
+</script>
+
+	  </form>
+	</td>
         <td><?php print("Digital Room Temperature"); ?>　　　　　</td>
         <td><?php print($obj_one->{'temperature'}); ?>　　　</td>
 	<td><?php print convertTime($obj_one->{'time'}); ?></td>
@@ -171,6 +232,8 @@ p        <td><?php print($obj_wifi_digi->{'clients_high_speed'}); ?>　　　</t
       </tr>
 
       <tr style="">
+	<td align="center" valign="middle">
+	</td>
         <td><?php print("ayafuji house temperature"); ?>　　　　　</td>
         <td><?php print($obj_ayafuji->{'temperature'}); ?>　　　</td>
 	<td><?php print convertTime($obj_ayafuji->{'time'}); ?></td>

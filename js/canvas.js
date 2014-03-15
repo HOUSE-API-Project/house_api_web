@@ -1,8 +1,16 @@
 var img;
+var all_wifi_bool = true;
+var wifi_twof_bool =true;
+var wifi_1f_bool = true;
+var wifi_bf_bool = true;
+var digi_pir_bool = true;
+var digi_temp_bool = true;
+
 
 onload = function() {
     draw();
 };
+
 function draw() {
   /* canvas要素のノードオブジェクト */
     var canvas = document.getElementById('canvas');
@@ -14,7 +22,9 @@ function draw() {
     }
   /* 2Dコンテキスト */
     var ctx = canvas.getContext('2d');
-    
+
+
+var loop = function() {    
     ctx.fillStyle = 'rgba(255,255,255,0.8)';
     ctx.beginPath();
     ctx.fillRect(0, 0, canvasWidth, canvasHeight);
@@ -65,18 +75,37 @@ function draw() {
 	}
 	ctx.stroke();
     }
+
+    if(digi_pir_bool) {
     //digital room pir
     drawGraph(canvasWidth,canvasHeight, array_digi_pir, array_digi_pir_length, 'RGB(204,51,51)');
+    }
+
+    if(digi_temp_bool) {
     //digital room temperature
     drawGraph(canvasWidth,canvasHeight, array_digi_temp, 100, 'RGB(51,51,102)');
+    }
+    if(wifi_bf_bool) {
     //bf wifi clients
     drawGraph(canvasWidth,canvasHeight, array_wifi_bf, 100, 'RGB(51,153,51)');
+    }
+    if(wifi_twof_bool) {
     //2f wifi clients
     drawGraph(canvasWidth,canvasHeight, array_wifi_twof, 100, 'RGB(102,102,255)');
+    }
+    if(wifi_1f_bool) {
     //1f wifi clients
     drawGraph(canvasWidth,canvasHeight, array_wifi_digi, 100, 'RGB(153,0,102)');
+    }
+    if(all_wifi_bool) {
     //all wifi clients
     drawGraph(canvasWidth,canvasHeight, array_wifi_clients, 100, 'RGB(153,0,102)');
+    }
+    setTimeout(loop, 100);
+   };
+
+     // 初期起動
+     loop();
 
     //export to img
     img=new Image();
