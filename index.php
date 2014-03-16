@@ -300,7 +300,7 @@ function handleClick_temp(cb) {
 	<td>shibuhouse</td>
         <td><?php print("/shibuhouse/1f/temperature"); ?></td>
       </tr>
-
+<!-- 
       <tr style="">
 	<td align="center" valign="middle">
 	</td>
@@ -310,6 +310,7 @@ function handleClick_temp(cb) {
 	<td>ayafuji House</td>
         <td><?php print("/ayafuji/temperature"); ?></td>
       </tr>
+-->
     </table>
 
     <h1 style="margin:20px 20px 0px 20px; width: 100%;">House API Project 概要 | House API Project Concept</h1>
