@@ -86,7 +86,7 @@ var loop = function() {
 //0.6 = 0.1px
     }
 
-    //canvasWidthLine += -0.1;
+    canvasWidthLine += -0.1;
     if(canvasWidthLine < 990) {
       canvasWidthLine = 1000;
     }

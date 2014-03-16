@@ -150,7 +150,7 @@ function convertTime($time) {
       <tr>
 	<th><img src="https://cdn3.iconfinder.com/data/icons/healthcare-icons/32/Eye_lift-16.png"></th>
         <th>API Name</th>
-        <th>Value</th>
+        <th>Current Value</th>
         <th>Time</th>
 	<th>location</th>
         <th>API Path(http://house-api-project.org/api)</th>
